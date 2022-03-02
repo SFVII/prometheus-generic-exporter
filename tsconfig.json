@@ -10,6 +10,7 @@
     "outDir": "lib",
     "resolveJsonModule": true,
     "strictNullChecks": true,
+    "declaration": true,
     "typeRoots": [
       "node_modules/@types",
       "type"
@@ -25,6 +26,6 @@
     "src/**/*"
   ],
   "exclude": [
-    "dist"
+    "lib"
   ]
 }

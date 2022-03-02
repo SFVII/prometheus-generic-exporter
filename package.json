@@ -1,14 +1,15 @@
 {
-  "name": "prometheus-k8s-pod-exporter",
+  "name": "prometheus-generic-exporter",
   "version": "1.0.0",
   "description": "Generic prometheus exporter for K8s env",
   "main": "lib/index.js",
   "scripts": {
-    "start": "node dist",
-    "clean": "rimraf dist/*",
+    "start": "node lib",
+    "clean": "rimraf lib/*",
     "lint": "eslint . --ext .ts",
     "tsc": "tsc",
-    "build": "npm-run-all clean lint tsc"
+    "build": "npm-run-all clean lint tsc",
+    "test" : "test.js"
   },
   "keywords": [
     "prometheus",
