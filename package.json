@@ -2,7 +2,8 @@
   "name": "prometheus-generic-exporter",
   "version": "1.0.0",
   "description": "Generic prometheus exporter for K8s env",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "start": "node lib",
     "clean": "rimraf lib/*",
