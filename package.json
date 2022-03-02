@@ -2,14 +2,16 @@
   "name": "prometheus-generic-exporter",
   "version": "1.0.0",
   "description": "Generic prometheus exporter for K8s env",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
     "start": "node lib",
     "clean": "rimraf lib/*",
     "lint": "eslint . --ext .ts",
     "tsc": "tsc",
     "build": "npm-run-all clean lint tsc",
-    "test" : "test.js"
+    "test" : "test.js",
+    "version" : "git add -A src",
+    "postversion" : "git push && git push --tags"
   },
   "keywords": [
     "prometheus",
@@ -40,5 +42,6 @@
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
     "typescript": "^4.3.5"
-  }
+  },
+  "files": ["lib/**/*"]
 }
