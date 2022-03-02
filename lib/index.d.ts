@@ -1,3 +1,4 @@
+export * from "./library";
 export declare type IType = 'gauge' | 'histogram' | 'counter';
 interface MetricModel {
     value: number;
@@ -30,4 +31,4 @@ export declare class PrometheusService {
     private Histogram;
     private Counter;
 }
-export {};
+export default PrometheusService;

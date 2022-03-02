@@ -6,7 +6,7 @@
  **  @Description
  ***********************************************************/
 import client, {Counter, Gauge, Histogram, Registry} from "prom-client";
-
+export * from "./library";
 export type IType = 'gauge' | 'histogram' | 'counter';
 const DefaultBuckets = [0.001, 0.01, 0.1, 1, 2, 5]
 
@@ -145,3 +145,5 @@ export class PrometheusService {
         // @todo Counter
     }
 }
+
+export default PrometheusService;
